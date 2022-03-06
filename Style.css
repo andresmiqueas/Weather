@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 15rem;
+	height: 32.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid #333;
+	border-radius: 1rem;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(50,50,50,0.29);
+	-moz-box-shadow:  7px 7px 5px 0px rgba(50,50,50,0.29);
+	box-shadow: 7px 7px 5px 0px rgba(50,50,50,0.29);
+}
+
+
+.container.day{
+	background-image: url(Imagenes/sunny.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.container.night{
+	background-image: url(Imagenes/night.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.imputTemp{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	flex: 0.4;
+	margin: 1rem auto;
+	width: 80%;
+}
+
+.search__submit{
+	display: flex;
+}
+
+.search__submit > button{
+	visibility: visible;
+	width: 50px;
+}
+
+.search{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: .5rem;
+	border: none;
+}
+
+.search:focus{
+	outline: none;
+}
+
+.inputTemp__number{
+	display: flex;
+	align-items: center;
+}
+
+.inputTemp__celsius{
+	text-align: center;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 4rem;
+}
+
+
+.inputTemp__symbol{
+	font-size: 3rem;
+	color: #fff;
+}
+
+
+.inputTemp__description, .location__city{
+	font-size: 1.3rem;
+	font-weight: bolder;
+	color: #333;
+
+}
+
+
+.location{
+	flex: 0.5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.location__date{
+	margin: 1.5rem;
+}
+
+
+.container.night .inputTemp__description{
+	color: #fff;
+}
+
+.container.night .location__city{
+	color: #fff;
+}
+
+.container.night .location__date{
+	color: #fff;
+	font-weight: bolder;
+}
+
+
+.container.night .weather{
+	color: #fff;
+}
+
+.weather{
+	display: flex;
+	flex: 0.1;
+	border-top: 2px solid #333;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+
+.weather__min > span{
+	font-size: 1.4rem;
+	color: blue;
+	font-weight: bolder;
+}
+
+
+
+
+.weather__max > span{
+	font-size: 1.4rem;
+	color: tomato;
+	font-weight: bolder;
+}
+
+.humedad{
+	display: inline-flex;
+}
